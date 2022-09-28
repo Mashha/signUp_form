@@ -1,14 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ba4c8dc756.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Sign-up form</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <div class="form-center">
+      <div class="left-image">
+        <div class="logo">
+          <div class="middle">
+            <div class="logo-image"></div>
+            <h2>TRAVELER</h2>
+          </div>
+          <div class="bottom">
+            <p>
+              Photo by
+              <a href="">Jack Finnigan</a>
+              on
+              <a href="">Uplash</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="right-signUpForm">
+        <div class="top">
+          <h1>Make your traveling even more memorable</h1>
+          <p>
+            Collect your best experiences on the camera and save them right away
+          </p>
+        </div>
+        <form action="" id="form">
+          <div class="icon">
+            <i class="fas fa-user"></i>
+            <input
+              type="text"
+              name="fName"
+              id="fName"
+              placeholder="First name"
+            />
+          </div>
+          <div class="icon">
+            <i class="fa-regular fa-user"></i>
+            <input
+              type="text"
+              name="lName"
+              id="lName"
+              placeholder="Last name"
+            />
+          </div>
 
-</body>
+          <div class="icon">
+            <i class="fas fa-envelope"></i>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email"
+            />
+          </div>
+
+          <div class="icon">
+            <i class="fa-regular fa-phone"></i>
+            <input
+              type="text"
+              name="number"
+              id="number"
+              placeholder="Phone number"
+            />
+          </div>
+
+          <div class="icon">
+            <i class="fa-solid fa-lock"></i>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+          </div>
+
+          <div class="repeat-password-input icon">
+            <i class="far fa-lock"></i>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Repeat password"
+            />
+          </div>
+        </form>
+        <div class="middle">
+          <p class="paragraph-check">
+            <input type="checkbox" />
+            I agree to the <a href="">terms and conditions</a>
+          </p>
+
+          <button class="createAccount">Create account</button>
+        </div>
+        <div class="bottom">
+          <p class="paragraph-sign">
+            Already have an account?
+            <a href="#">Sign in</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

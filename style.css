@@ -1,0 +1,87 @@
+@import "reset.css";
+
+body {
+    background-color: #333;
+    display: grid;
+    place-items: center;
+}
+
+.form-center {
+    width: 900px;
+    height: 600px;
+background-color: white;
+display: grid;
+grid-template-columns: 1.2fr 1.5fr;
+}
+
+.left-image {
+    background-image: url("image.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.right-signUpForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.right-signUpForm p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#form {
+    width: 90%;
+    margin: auto;
+    margin: 50px auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+#form p {
+    align-self: flex-end;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    text-indent: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.middle {
+    text-align: center;
+    padding: 20px
+}
+
+.paragraph-check {
+    margin-bottom: 20px;
+}
+
+.bottom {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icon {
+    display: relative;
+    display: flex;
+    align-items: center;
+}
+
+i {
+    position: absolute;
+}
+
