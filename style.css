@@ -1,15 +1,15 @@
 @import 'reset.css';
 
 @font-face {
-  font-family: 'Jabirah';
-  src: url('font/Jabirah.ttf');
+  font-family: 'Pumpkin';
+  src: url('font/Pumpkins Candles.ttf');
 }
 
 body {
   background-color: #333;
   display: grid;
   place-items: center;
-  font-family: 'Jabirah', sans-serif;
+  font-family: 'Pumpkin', sans-serif;
 }
 
 .form-center {
