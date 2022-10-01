@@ -162,6 +162,11 @@ i {
   color: #991144;
 }
 
+footer {
+  justify-self: center;
+  align-self: end;
+}
+
 /* Media query */
 @media (max-width: 900px) {
   .form-center {
