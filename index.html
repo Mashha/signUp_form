@@ -23,9 +23,9 @@
         <div class="left-bottom">
           <p>
             Photo by
-            <a href="https://unsplash.com/@jackofallstreets">Jack Finnigan</a>
+            <a href="https://unsplash.com/@jackofallstreets" target="_blank">Jack Finnigan</a>
             on
-            <a href="https://unsplash.com/">Uplash</a>
+            <a href="https://unsplash.com/" target="_blank">Uplash</a>
           </p>
         </div>
       </div>
@@ -47,6 +47,8 @@
               name="fName"
               id="fName"
               placeholder="First name"
+              autocomplete="on"
+              required
             />
           </div>
           <div class="icon">
@@ -56,6 +58,8 @@
               name="lName"
               id="lName"
               placeholder="Last name"
+              autocomplete="on"
+              required
             />
           </div>
 
@@ -66,6 +70,8 @@
               name="email"
               id="email"
               placeholder="Your email"
+              autocomplete="on"
+              required
             />
           </div>
 
@@ -76,6 +82,9 @@
               name="number"
               id="number"
               placeholder="Phone number"
+              pattern="[0-9]{9}"
+              autocomplete="on"
+              required
             />
           </div>
 
@@ -83,9 +92,12 @@
             <i class="fa-solid fa-unlock-keyhole"></i>
             <input
               type="password"
-              name="password"
-              id="password"
+              name="password1"
+              id="password1"
               placeholder="Password"
+              title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              required
             />
           </div>
 
@@ -93,21 +105,25 @@
             <i class="fa-solid fa-lock"></i>
             <input
               type="password"
-              name="password"
-              id="password"
+              name="password2"
+              id="password2"
               placeholder="Repeat password"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              required
             />
           </div>
-        </form>
+       
         <div class="middle">
           <p class="paragraph-check">
-            <input type="checkbox" />
+            <input type="checkbox" id="checkbox" name="checkbox" required/>
             I agree to the
             <a href="#" class="colored-text">terms and conditions</a>
           </p>
 
-          <button class="createAccount">Create account</button>
+          <button type="submit" class="createAccount">Create account</button>
         </div>
+       </form>
+
         <div class="bottom">
           <p class="paragraph-sign">
             Already have an account?
@@ -116,5 +132,7 @@
         </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
