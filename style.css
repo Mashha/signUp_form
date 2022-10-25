@@ -108,7 +108,7 @@ input::placeholder {
   align-items: center;
 }
 
-i {
+form i {
   position: absolute;
 }
 
@@ -162,9 +162,22 @@ i {
   color: #991144;
 }
 
+#name, #git-icon {
+  color: white;
+}
+
+#git-icon {
+  transition: transform .3s ease-in;
+}
+
+#git-icon:hover {
+  transform: rotate(360deg);
+}
+
 footer {
   justify-self: center;
   align-self: end;
+  font-size: 20px;
 }
 
 /* Media query */
